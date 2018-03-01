@@ -1,0 +1,190 @@
+/* CHANGE THIS PATH ACCORDING TO YOUR THEME !!!!! */
+
+/* define background image for special states - I use one single image that holds all the colors */
+.cal_month ul li.available_am,
+.cal_month ul li.available_pm,
+.cal_month ul li.train_am,
+.cal_month ul li.train_pm,
+.cal_month ul li.unav_am,
+.cal_month ul li.unav_pm	{	background-image:url("../../ac-contents/themes/default/images/bg_days.png");}
+
+#cal_wrapper{
+	font: 11px/1.6 Arial, sans-serif;
+	color: #444;
+	width:1030px;
+	margin:10px -120px;
+	bottom: 0%;
+	}
+#the_months{
+	float:left;
+	width:900px;
+	}
+.clear{	clear:both;}
+#ajax_message{
+	text-align:center;
+	border-top:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+	background: #FFFFEE;
+	float:left;
+	margin-left:10px;
+	width:200px;
+	}
+/* month loading animation - push to center*/
+.img_loading_month{
+	margin:50px;
+	}
+/*
+calendar key
+***************************/
+
+#key_wrapper{
+	float:right;
+	text-align:center;
+	}
+#key{
+	width:140px;
+	background: #EEE;
+	color:#111;
+	}
+#key .cal_title{
+	color:#FFF;
+	}
+#key ul{
+	text-align:left;
+	}
+#key ul li{
+	float:none;
+	}
+#key ul li span{
+	margin-left:45px;
+	width:90px;
+	text-align:left;
+	display:block;
+	}
+#key #footer_data{
+	font-size:0.7em;
+	clear:both;
+	}
+
+
+/*
+calendar controls (back and next)
+***************************/
+#cal_controls{
+	margin-bottom:10px;
+	}
+#cal_controls #cal_prev{
+	float:left;
+	}
+#cal_controls #cal_next{
+	float:left;
+	margin-left:2px;
+	}
+#cal_controls #cal_admin{
+	float:left;
+	margin-left:10px;
+	}
+
+/*
+calendar month styles
+***************************/
+.cal_month{
+	/* month div*/
+	width:285px;
+	border:1px solid #006699;
+	background:#FFFFEE;
+	line-height:20px;
+	padding-bottom:6px;
+	float:left;
+	margin-right:6px;
+	margin-bottom:6px;
+	min-height:296px;
+	color:#666;
+	}
+#key .cal_title,
+.cal_month .cal_title{
+	border-bottom: 1px solid #CCC;
+	background:#006699;
+	padding:2px;
+	text-align:center;
+	color:#FFF;
+	}
+.cal_month ul{
+	clear:both;
+	list-style:none;
+	margin:0px;
+	padding:4px;
+	margin:auto;
+	width:267px;
+	color:#FFF;
+	}
+.cal_month ul li{
+	float:left;
+	width:35px;
+	height:35px;
+	border:1px solid #CCC;
+	margin-right:1px;
+	margin-bottom:1px;
+	text-align:center;
+	background-color:#DDD;
+	color:#000;
+	font-size:90%;
+	}
+
+/* day titles (m,t,w etc. */
+.cal_month ul.cal_weekday li{
+	color:#FFF;
+	background-color:#006699;
+	border:1px solid #006699;
+	}
+/* no month date */
+.cal_month ul li.cal_empty{
+	background-color:#EEE;
+	border:1px solid #EEE;
+	color:#CCC;
+	}
+
+.cal_month ul li.active 				{background-color: #01CC00; }
+.cal_month ul li.unav				{	background-color: #FF9800;	}		/* complete day booked */
+.cal_month ul li.vac		{	background-color: #FF0000;	}		/* complete day provisionally booked */
+.cal_month ul li.training		{	background-color: #ffff10;	}
+
+
+/*
+calendar date styles
+class name must be the same as defined in admin panel
+***************************/
+
+.cal_month ul li.offer			{	background-color:lime;		}
+.cal_month ul li.changeover		{	background-color:pink;		}
+
+
+
+
+
+/* position background image for each state - adjust to your image */
+.cal_month ul li.unav_am	{	background-position: 245px center; background-size: 1000%;	}
+.cal_month ul li.unav_pm	{	background-position: 630px center; background-size: 1000%;	}
+.cal_month ul li.train_am	{	background-position: 37px center; background-size: 1000%;	}
+.cal_month ul li.train_pm	{	background-position: 70px center; background-size: 1000%;	}
+
+.cal_month ul li.weekend		{	/*border:1px solid #3399CC;*//*altered via mootools*/}
+.cal_month ul li.today			{	border:1px dotted #006699;	}	/* current date - MUST be defined last otherwise other classes might overwrite it*/
+/*.cal_month ul li:hover{	background:#006699; color:#FFF;}*/
+
+
+.tips{
+	background: #000;
+	padding:6px;
+	color:#FFF;
+	border:2px solid #666;
+}
+.cal_month ul li.weeknum_spacer{
+	width:4px;
+	background-color:#FFFFEE;
+	border:none;
+	}
+.cal_month ul li.weeknum{
+	width:4px;
+	background-color:green;
+	}
